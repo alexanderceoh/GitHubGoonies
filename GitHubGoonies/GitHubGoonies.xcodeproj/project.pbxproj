@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49741B6C1BBAE73200A86AEA /* CreateGoonieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741B6B1BBAE73200A86AEA /* CreateGoonieViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		49AA6B5E1BB9B6F90079E085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA6B5D1BB9B6F90079E085 /* AppDelegate.swift */; };
 		49AA6B631BB9B6F90079E085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AA6B611BB9B6F90079E085 /* Main.storyboard */; };
 		49AA6B651BB9B6F90079E085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA6B641BB9B6F90079E085 /* Assets.xcassets */; };
@@ -14,9 +15,11 @@
 		49AA6B701BB9BB5D0079E085 /* GooniesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA6B6F1BB9BB5D0079E085 /* GooniesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		49AA6B721BB9BC300079E085 /* Goonies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA6B711BB9BC300079E085 /* Goonies.swift */; settings = {ASSET_TAGS = (); }; };
 		49AA6B741BB9C7790079E085 /* GoonieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA6B731BB9C7790079E085 /* GoonieTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		49BAB4351BBACA1E00AF4ED6 /* GoonieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAB4341BBACA1E00AF4ED6 /* GoonieDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49741B6B1BBAE73200A86AEA /* CreateGoonieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGoonieViewController.swift; sourceTree = "<group>"; };
 		49AA6B5A1BB9B6F90079E085 /* GitHubGoonies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubGoonies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA6B5D1BB9B6F90079E085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AA6B621BB9B6F90079E085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		49AA6B6F1BB9BB5D0079E085 /* GooniesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooniesTableViewController.swift; sourceTree = "<group>"; };
 		49AA6B711BB9BC300079E085 /* Goonies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goonies.swift; sourceTree = "<group>"; };
 		49AA6B731BB9C7790079E085 /* GoonieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoonieTableViewCell.swift; sourceTree = "<group>"; };
+		49BAB4341BBACA1E00AF4ED6 /* GoonieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoonieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				49AA6B641BB9B6F90079E085 /* Assets.xcassets */,
 				49AA6B661BB9B6F90079E085 /* LaunchScreen.storyboard */,
 				49AA6B691BB9B6F90079E085 /* Info.plist */,
+				49BAB4341BBACA1E00AF4ED6 /* GoonieDetailViewController.swift */,
+				49741B6B1BBAE73200A86AEA /* CreateGoonieViewController.swift */,
 			);
 			path = GitHubGoonies;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			files = (
 				49AA6B741BB9C7790079E085 /* GoonieTableViewCell.swift in Sources */,
 				49AA6B721BB9BC300079E085 /* Goonies.swift in Sources */,
+				49741B6C1BBAE73200A86AEA /* CreateGoonieViewController.swift in Sources */,
+				49BAB4351BBACA1E00AF4ED6 /* GoonieDetailViewController.swift in Sources */,
 				49AA6B701BB9BB5D0079E085 /* GooniesTableViewController.swift in Sources */,
 				49AA6B5E1BB9B6F90079E085 /* AppDelegate.swift in Sources */,
 			);
@@ -291,6 +299,7 @@
 				49AA6B6E1BB9B6F90079E085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

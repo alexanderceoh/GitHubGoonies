@@ -44,7 +44,7 @@ let API_ROOT = "https://api.github.com"
 
 let myProfileURL = API_ROOT + "/users/alexanderceoh"
 
-let users: [[String:AnyObject?]] = [
+var users: [[String:AnyObject?]] = [
     
     [
         "login": "alexanderceoh",
@@ -80,3 +80,67 @@ let users: [[String:AnyObject?]] = [
     ]
     
 ]
+
+
+class GitHubRequest: NSObject {
+    
+    // the completion is that "time capsule" of code
+    class func requestUserInfo(username: String, completion: (responseInfo: AnyObject?) -> ()) {
+        
+        let userURL = API_ROOT + "/users/" + username
+        
+        print(userURL)
+        
+        if let url = NSURL(string: userURL) {
+            
+            let request = NSURLRequest(URL: url)
+            
+            
+            //we're passing a function to a function
+            let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
+                (data, response, error) -> Void in
+                
+                
+                // this is a new variable declaration, but the unwrapped version of it
+                // for purposes of optionals
+                // HTTP GET request
+                
+                if let data = data {
+                
+                    do {
+                        
+                        let info = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+                        
+                        // this is where we run that "time capsule". now we run it
+                        // now we set that parameter of tat code to info
+                        completion(responseInfo: info)
+                        
+                        
+                        // this print(info) fires after print(user) in the closure of CreateGoonie
+                        print(info)
+                
+                    } catch {
+                        
+                        print(error)
+                        
+                    }
+                }
+                
+//                print(data)
+        
+            })
+
+            task.resume()
+        }
+        
+    }
+    
+    
+    class func request(info: [String:AnyObject], completion: (responseInfo: AnyObject?) -> ()) {
+        
+
+        
+    }
+    
+}
+

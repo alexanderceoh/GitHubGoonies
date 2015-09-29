@@ -56,7 +56,9 @@
                             <outlet property="delegate" destination="eCd-V8-BWz" id="fvf-dE-mzQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Goonies" id="icz-QV-JDp"/>
+                    <navigationItem key="navigationItem" title="Goonies" id="icz-QV-JDp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cHJ-J1-e9y"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILo-EO-V9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
